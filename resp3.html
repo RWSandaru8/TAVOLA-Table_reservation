@@ -1,0 +1,111 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenoli Restaurant - Tavola V1.1</title>
+    <link rel="icon" type="image/x-icon" href="assets/Images/logo.jpg">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/Kenoli.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="up" id="home">
+      
+        <video autoplay muted loop id="upVideo">
+            <source src="assets/Images/Bgv.mp4" type="video/mp4">
+        </video>
+
+        <div class="up-content">
+            <h1> Welcome to Kenoli Restaurant In Sigiriya </h1>
+            <p>Your comfort is our priority</p>
+            <a href="#down"><b>Explore Our Services</b></a>
+        </div>
+    </section>
+    <div class="content">
+        <div class="hotel-info">
+            <h2>About Kenoli Restaurant</h2>
+            <img src="assets/images/res3/Kenoli.png" alt="Kenoli Restaurant"> 
+            <p>
+                Welcome to Kenoli, near the Sigiriya, We believe dining should be an experience that delights all your senses.
+                Our menu is crafted with the freshest ingredients, served in an atmosphere that feels like home.
+                Come join us and discover the warmth of hospitality at kenoli.
+            </p>
+        </div>
+
+         
+        <div class="biggallery">
+            <h2>Our Restaurant </h2>
+            <div class="gallery">
+            <img src="assets/images/res3/kenoli_img1.jpg" alt="Starbeans1">
+            <img src="assets/images/res3/kenoli_img2.jpg" alt="Starbeans2">
+            <img src="assets/images/res3/kenoli_img3.jpg" alt="Starbeans3">
+        </div>
+        </div>
+
+        <div class="nearby-locations" id="down">
+            <h2>Nearby Attractions</h2>
+            <div class="carousel">
+                <div class="carousel-slide">
+                    <img src="assets/images/res3/Sigiriya.jpg"Upper Diyaluma">
+                    <div class="caption">Sigiriya</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/res3/Dambulla.jpg" alt="Flying Ravana">
+                    <div class="caption">Dambulu Len Viharaya</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/res3/Pidurangala.jpg" alt="Nine Arch Bridge">
+                    <div class="caption">Pidurangala Rock</div>
+                </div>
+                <div class="carousel-slide">
+                    <img src="assets/images/res3/Minneriya_park.jpg" alt="Edison Bungalow">
+                    <div class="caption">Minneriya National Park</div>
+                </div>
+            </div>
+            
+            <button class="carousel-button prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="carousel-button next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+
+        <a href="checkout.php?source=3" class="reservation-button"><Table>Table Reservation</Table></a>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>&#169 Tavola v1.1 2024</p>
+            <br><br>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="">Terms</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="social">
+            <a href=""><img src="assets/Images/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="assets/Images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="assets/Images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+    <script src="assets/resp3.js"></script>
+</body>
+</html>

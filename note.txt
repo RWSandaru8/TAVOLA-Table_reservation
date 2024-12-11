@@ -1,0 +1,58 @@
+user side
+
+index.php file 
+in this file we have a from which is used for user login.
+User can login if they have and account. 
+if not an account can be created useing the create account button.
+or they can bypass the login to only view web page.
+after the user loggede in a session for them is created using there "Email".
+and there is another button which directs to the admin login
+
+signup.php
+in this file there is a frm to create a user account.
+and using th post meeethood they are retrived to this file and storeede to the database.
+after thee login is succesfull the user is directs to the user login page.
+
+all htmls can bee viewed this page regradless if loggeed in or not
+
+home.html
+main page
+
+reserve.html
+list all 4 restaurents and can vieew them by clicking on them
+
+resp1.html
+Pedlar's Inn Cafe
+
+resp2.html
+The Barn by Starbeans
+
+resp3.html
+Kenoli Restaurant In Sigiriya
+
+resp4.html
+Fox Kandy
+
+connection.php
+include the php code which conncts to the database
+
+checkout.php
+user can only view this if they areee looggeed in(meaning they can only view if they have a session)
+if they do not havee a session they are forwaded t the index.php file for log in.
+(this is achived by a if condition - 
+    if(isset($_SESSION['email'])){
+      $email = $_SESSION['email'];
+    }
+)
+this page ideentifis where the user came from using - 
+    if (isset($_GET['source'])) {
+      $_SESSION['source'] = (int)$_GET['source'];
+    }
+the previes page passes the source to this page by a get method
+then user can book by nselecting the tables shown in the seat map and proceed. 
+if the bokings overlap then it gives the user a message saying that thy overlap if nt it displays which tables that they just reserved.
+
+
+
+
+

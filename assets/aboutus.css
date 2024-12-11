@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-image: url(Images/pic3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+img.logohero{
+    height: 300px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.Devin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.562);
+    height: 55%;
+    width: 65%;
+    margin: 50px;
+    position: relative;
+    left: 10%;
+    border: 3px solid rgb(147, 201, 67);
+    border-radius: 15px;
+}
+
+.About{
+    color: white;
+    text-align: center;
+    margin-top: 4.5%;
+    margin-bottom: 2%;
+    font-family: "Frijole", system-ui;
+    font-weight: 400;
+    font-style: 50%;
+}
+
+.Italy {
+    padding: 10%;
+    color: white;
+    text-align: center;
+    font-size: 180%;
+    padding-top: 2%;
+    font-family: "Nerko One", cursive;
+    font-weight: 30%;
+    font-style: normal;
+}
+
+.button{
+    background-color: #ffd900;
+    padding: 2%;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}

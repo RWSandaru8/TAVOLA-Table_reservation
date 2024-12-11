@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div.hero{
+    color: white;
+    padding: 5%;
+}
+
+div.wrap1{
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+div.section1{
+    background: rgb(51,51,51);
+    background: linear-gradient(40deg, rgba(51,51,51,1) 27%, rgba(212,175,55,1) 100%);
+    background-size: cover;
+    height: 5vh;
+    border-radius: 60px;
+    padding: 5%;
+    padding-bottom: 20%;
+    transition: 400ms ease-in-out;
+}
+
+div.section1:hover{
+    background: rgb(51,51,51);
+    background: linear-gradient(135deg, rgba(51,51,51,1) 27%, rgba(212,175,55,1) 100%);
+    transition: 400ms ease-in-out;
+}
+
+.section1 h1{
+    font-size: 3em;
+    font-weight: 450;
+    padding-bottom: 3vh;
+}
+
+.section1 p{
+    padding-bottom: 8vh;
+}
+
+img.section1pic{
+    position: absolute;
+    right: 10%;
+    top: 0;
+    border-radius: 60px;
+    height: 100%;
+    width: 30%;
+    z-index: 2;
+}
+
+.button{
+    background-color: #8e6a00;
+    padding: 1%;
+    color: white;
+    border-radius: 20px;
+}
+
+.social {
+    margin-top: 5%;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.section2{
+    font-size: 1.3em;
+    display: flex;
+    height: 80vh;
+    color: #333333;
+}
+
+.section2text{
+    width: 45%;
+    margin: 5%;
+}
+
+p.sec2gold{
+    color: #8e6a00;
+}
+
+.section2pic{
+    width: 40%;
+    position: relative;
+    background-color: #D4AF37;
+    border-radius: 50px;
+    margin: 5%;
+}
+
+table.sec2table{
+    width: 100%;
+    position: relative;
+    padding: 5%;
+}
+
+.sec2table img{
+    width: 40px;
+    height: 40px;
+}
+
+.sec2table dt{
+    font-weight: bold;
+    padding-left: 1%;
+    padding-bottom: 4%;
+}
+
+.sec2table dd{
+    padding-left: 1%;
+    padding-bottom: 8%;
+}
+
+img.sec2pic{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    border-radius: 50px;
+}
+
+.section3{
+    position: relative;
+    color: #333333;
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+div.sec3imgs{
+    display: flex;
+}
+
+.sec3imgs div{
+    position: relative;
+    margin-right: 5%;
+    height: 18vh;
+    width: 15%;
+    padding-top: 8%;
+    font-size: 1.25em;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+.sec3imgs div{
+    position: relative;
+    margin-right: 5%;
+    height: 18vh;
+    width: 15%;
+    padding-top: 8%;
+    font-size: 1.25em;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    align-content: center;
+}
+
+div.pic1{
+    background-image: url(Images/home/elegent.jpeg);
+    background-size: cover;
+    transition: 500ms ease-in-out;
+}
+
+div.pic2{
+    background-image: url(Images/home/Cozy.jpeg);
+    background-size: cover;
+}
+
+div.pic3{
+    background-image: url(Images/home/outdoor.jpg);
+    background-size: cover;
+}
+
+div.pic4{
+    background-image: url(Images/home/Familiy.jpeg);
+    background-size: cover;
+}
+
+div.pic5{
+    background-image: url(Images/home/romantic.jpeg);
+    background-size: cover;
+}
+
+div.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
+    background-color: rgba(51, 51, 51, 0.6);
+    transition: 1000ms ease-in-out;
+}
+
+div.overlay:hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 93%;
+    background-color: rgba(51, 51, 51, 0.4);
+    transition: 400ms ease-in-out;
+}
+
+div.contact{
+    padding: 50px 0;
+    background-color: #684505;
+    padding-left: 20%;
+    color: white;
+}
+
+div.infobox{
+    padding-top: 3%;
+    display: flex;
+}
+
+div.infobox div{
+    display: flex;
+}
+
+div.infobox img{
+    width: 50px;
+    height: 50px;
+    padding-right: 1%;
+}
+
+div.infotext{
+    display: flex;
+    flex-direction: column;
+    padding-right: 3%;
+}
+
+div.infotext h3{
+    padding-bottom: 3%;
+}
+
+div.reserve{
+    display: flex;
+    padding-top: 3%;
+    background-color: #684505;
+    color: white;
+}
+
+div.reserve img{
+    width: 50%;
+}
+
+div.reservetext{
+    font-size: 1.25em;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+p.lgold{
+    color: #D4AF37;
+}
+
+h2.ready{
+    padding-bottom: 3%;
+    font-size: 1.75em;
+}
+
+.button2{
+    text-decoration: none;
+    width: 40%;
+    margin-top: 5%;
+    background-color: #8e6a00;
+    padding: 4%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}

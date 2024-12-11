@@ -1,0 +1,102 @@
+<?php
+include "connection.php";
+session_start();
+if (isset($_SESSION['email'])) {
+    $email = $_SESSION['email'];
+} else {
+    echo '<script>
+        window.alert("Access denied!);
+        window.location.href = "index.php";
+    </script>';
+    exit();
+}
+
+if (isset($_GET['source'])) {
+    $res_id = (int)$_GET['source'];
+}
+$sql = "SELECT * FROM reservations WHERE res_id = $res_id";
+$result = mysqli_query($conn, $sql);
+$no = mysqli_num_rows($result);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tavola V1.1</title>
+    <link rel="icon" type="image/x-icon" href="assets/Images/logo.jpg">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/reserve.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1 class="heading">My Orders</h1>
+        <p class="heading">you can view the user information and edit orders in this section</p>
+        <div class="res_table">
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Table ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php
+                    if ($no > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            echo "<tr>";
+                            echo "<td>" . htmlspecialchars($row['email']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['reservation_date']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['reservation_time']) . "</td>";
+                            echo "<td>" . htmlspecialchars($row['table_id']) . "</td>";
+                            echo "</tr>";
+                        }
+                    } else {
+                        echo "<tr><td colspan='5'>No reservations found.</td></tr>";
+                    }
+                    ?>
+                </tbody>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div>
+            <p>&#169 Tavola v1.1 2024</p>
+            <br><br>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+                <li><a href="home.html#contact">Contact Us</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="">Terms</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="social">
+            <a href=""><img src="assets/Images/facebook.png" alt="Facebook"></a>
+            <a href=""><img src="assets/Images/twitter.png" alt="Twitter"></a>
+            <a href=""><img src="assets/Images/instagram.png" alt="Instagram"></a>
+        </div>
+    </div>
+
+</body>
+</html>
+

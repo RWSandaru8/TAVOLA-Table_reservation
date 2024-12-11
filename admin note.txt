@@ -1,0 +1,21 @@
+admin side
+
+in the indeex.php file there is a link that directs to the admin login.
+
+adminlogin.php
+can't create accounts like users, need to use admin login.
+after login an session is created using the email and redirects to the admin dashboard.
+
+admin.php
+this is the page that is the admin dashboard which the admin can use to view details such as todays reservations all reservation etc.
+they all use sql qureies to filter the result
+in the left pannel there is a button which can use to navigate to resadmin.php
+
+resadmin.php
+this is page which list the restaurents and there current number of reservations each.
+in each Restaurant box there is a button which can used view details about each reservation for that particular hotel in a chart.
+
+there is logout button for the admin in every page which the admin can use to log out of the system.(this will load the logout.php)
+
+logot.php
+distorys the current session.

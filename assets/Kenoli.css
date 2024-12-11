@@ -1,0 +1,280 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.header2 {
+    position: relative;
+    height: 75vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+div.up {
+    height: 100vh;
+    padding: 20%;
+    margin-bottom: 0px;
+}
+
+.up h1 {
+    padding-bottom: 3vh;
+}
+
+.button {
+    background-color: #e0ae17;
+    padding: 2%;
+    color: #000000;
+    border-radius: 5px;
+}
+
+.up {
+    height: 100vh;
+    background: url() no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #0A0A0A;
+    margin-bottom: 0px;
+    font-size: 200px;
+
+}
+
+.up-content {
+    margin-bottom: 4%;
+    position: relative;
+    z-index: 1;
+}
+
+.up-content h1 {
+    font-size: 100px;
+    animation: fadeInDown 1.5s ease-in-out;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+    font-weight: bold;
+    color: #D4AF37;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke: 3px rgb(0, 0, 0);
+    background: linear-gradient(to right, #e3d699, #c7a94e, #ad8d23);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.up p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    animation: fadeInUp 1.5s ease-in-out;
+    color: #2e2d2d;
+}
+
+.up a {
+    padding: 0.75rem 2rem;
+    background-color: #D4AF37;
+    color: #0A0A0A;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    animation: bounce 2s infinite;
+    transition: background-color 0.3s;
+    font-weight: 100px;
+
+}
+
+.up p {
+    font-size: 1.2rem;
+}
+
+.up video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+}
+
+
+.up a:hover {
+    background-color: #8e6a00;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 1.5em;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family: Josefin Sans;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.content {
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hotel-info,
+.nearby-locations {
+    margin-bottom: 40px;
+}
+
+.hotel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-info p {
+    margin-top: 2vh;
+    text-align: justify;
+}
+
+.hotel-info img {
+    width: auto;
+    height: 60vh;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.hotel-info h2,
+.nearby-locations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8e6a00;
+    font-family: Lato;
+}
+
+.hotel-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #0A0A0A;
+    font-family: 'Lucida Sans';
+}
+
+.caption {
+    font-size: 1.1em;
+    color: #0A0A0A;
+}
+
+.biggallery h2 {
+    text-align: center;
+    color: #8e6a00;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    font-family: Lato;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width: 30%;
+    border-radius: 10px;
+}
+
+.reservation-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family: DM Serif Text;
+    font-size: 1.9em;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    font-family: DM Serif Text;
+}
+
+.reservation-button:hover {
+    background-color: #8e6a00;
+}
+
+.nearby-locations {
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}

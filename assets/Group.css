@@ -1,0 +1,64 @@
+*{
+     margin: 0px;
+     padding: 0px;
+}
+ 
+body {
+     background-image:url(Images/cyber.jpg) ;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     backdrop-filter: blur(1px);
+}
+
+h1 {
+     color: #000000;
+     text-align: center;
+     margin-top: 5%;
+     font-weight: 200;
+     font-weight: bold;
+     font-style: normal;
+     text-shadow: 100px;
+}
+
+.Pro1 {
+     display: grid;
+     width: 40%;
+     background-color: #bfaf80aa;
+     border: 2px solid #8e6a00;
+     text-align: center;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     margin-left: 5%;
+     border-radius: 5px;
+     padding: 2%;
+}
+
+.Pro2 {
+     display: grid;
+     width: 40%;
+     background-color: #bfaf80aa;
+     border: 2px solid #8e6a00;
+     text-align: center;
+     margin-top: 2%;
+     margin-bottom: 2%;
+     margin-left: 5%;
+     margin-right: 5%;
+     border-radius: 5px;
+     padding: 2%;
+}
+
+.Prof1 {
+     display: flex;
+}
+
+.Prof2 {
+     display: flex;
+}
+
+
+.PARA1 {
+     color: #000000;
+     font-size: 20px;
+     font-family: "Nerko One", cursive;
+}

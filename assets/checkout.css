@@ -1,0 +1,177 @@
+body{
+  background-image: url("Images/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: Top;
+  background-attachment: fixed;
+  backdrop-filter: blur(1px);
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+fieldset {
+  background-color: #bfaf80d6;
+  box-shadow: 0 0 15px 15px rgb(0, 0, 0);
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
+  border: 2px solid #8e6a00;
+  border-radius: 2%;
+  padding: 4%;
+}
+
+table{
+  width: 100%;
+}
+
+tr{
+  width: 100%;
+}
+
+tr.n{
+  width: 100%;
+}
+
+tr.n td{
+  padding-left: 5%;
+  text-align: center;
+  width: 100%;
+}
+
+th{
+  padding-bottom: 0px;
+  padding-top: 3%;
+}
+
+td{
+  text-align: center;
+  padding-right: 5%;
+  padding-top: 5%;
+}
+input{
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+}
+
+
+.checkbox input{
+  height: 30px;
+  width: 30px;
+  margin-left: 0;
+}
+input:hover{
+  border: 2px solid #8e6a00;
+  border-radius: 5px;
+}
+
+label {
+  font-weight: bold;
+}
+#time,#comments{
+  width: 100%;
+  height: 35px;
+  padding-left: 5px;
+}
+#time:hover,#comments:hover{
+  border: 2px solid #8e6a00;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background-color: #8e6a00;
+  color: white;
+  letter-spacing: 1px;
+  border: 1px solid white;
+  border-radius: 25px;
+  cursor: pointer;
+}
+button:hover{
+  letter-spacing: 2px;
+}
+
+div.col{
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  width: 20%;
+  text-align: center;
+  margin-right: 5%;
+}
+
+div.col div{
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+}
+
+div.col input:active{
+  color: cadetblue;
+}
+
+div.table1 input{
+  position: relative;
+  right: -30%;
+  border-radius: 20px;
+  height: 20px;
+}
+
+div.table2 input{
+  position: relative;
+  right: -25%;
+  border-radius: 20px;
+  height: 20px;
+}
+
+div.table3 input{
+  position: relative;
+  right: -25%;
+  border-radius: 20px;
+  height: 20px;
+}
+
+div.rowx{
+  display: flex
+}
+
+div.table1{
+  background-color: #8e6a00;
+  border-radius: 15px;
+  height: 15vh;
+  width: 90%;
+  padding: 4%;
+  margin-right: 10%;
+  margin-bottom: 20%;
+  padding-bottom: 5%;
+  z-index: 1;
+}
+
+div.table2{
+  background-color: #8e6a00;
+  border-radius: 15px;
+  height: 28vh;
+  width: 60%;
+  padding: 4%;
+  margin-right: 12%;
+  margin-left: 12%;
+  margin-bottom: 8%;
+  padding-bottom: 5%;
+}
+
+div.table3{
+  background-color: #8e6a00;
+  border-radius: 15px;
+  height: 15vh;
+  width: 50%;
+  padding: 4%;
+  margin-right: 5%;
+  margin-bottom: 15%;
+  padding-bottom: 5%;
+}

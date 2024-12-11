@@ -1,0 +1,234 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #615d5d;
+    background-image:url("images/res2/background.jpg");
+    color: #333;
+}
+
+.header2 {
+    position: relative;
+    height: 75vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size:1.5em;
+}
+
+.header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-family:Josefin Sans ;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.content {
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hotel-info, .nearby-locations {
+    margin-bottom: 40px;
+}
+
+.hotel-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-info p{
+    margin-top: 2vh;
+}
+
+.hotel-info img {
+    width: auto;
+    height: 80vh;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.hotel-info h2, .nearby-locations h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#9d8951  ;
+    font-family:Lato ;
+}
+
+.hotel-info p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #0A0A0A;
+    font-family:'Lucida Sans' ;
+}
+.caption {
+    font-size: 1.1em;
+    color: #0A0A0A;
+}
+.biggallery h2{
+    text-align: center;
+    color: #9d8951;
+    margin-bottom:20px;
+    font-size: 2.5em;
+    font-family:Lato;
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.gallery img {
+    width:30%;
+    border-radius: 10px;
+    
+}
+
+.reservation-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: #5d4a4a;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-family:DM Serif Text ;
+    font-size: 1.9em;
+    border-radius: 7px;
+    transition: background-color 0.3s;
+    font-family:DM Serif Text ;
+}
+
+
+.reservation-button:hover {
+    background-color: #b59c51;
+}
+
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color:rgb(220, 216, 216);
+}
+
+.reservation-form label {
+    margin-bottom: 10px;
+    display: block;
+    color:#bca979 ;
+   
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7d6e42  ;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    cursor: pointer;
+   
+}
+
+.reservation-form button:hover {
+    background-color:#4B3621;
+}
+
+.nearby-locations {
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: auto;
+    background-size: contain;
+    display: block;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}

@@ -1,0 +1,251 @@
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.header2 {
+    position: relative;
+    height: 75vh; /* Full-screen height */
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 75%;
+    object-fit: cover;
+    z-index: -1; /* Send the video behind the text content */
+}
+
+.header-content {
+    position: relative;
+    z-index: 1; /* Ensure the text appears over the video */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    padding: 0px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a dark overlay for better text visibility */
+}
+
+.header p {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.content {
+    padding: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hotel-info, .nearby-locations {
+    margin-bottom: 40px;
+}
+
+.hotel-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.hotel-info h2, .nearby-locations h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.hotel-info p, .nearby-locations p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+
+.btn {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 20px;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.feature img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.feature-content {
+    width: 40%;
+}
+
+.feature-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.reservation-button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.reservation-button:hover {
+    background-color: #434190;
+}
+
+.reservation-form {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 40px auto;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reservation-form label {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #5a67d8;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #434190;
+}
+
+.nearby-locations {
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.carousel img, .carousel video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-controls button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
