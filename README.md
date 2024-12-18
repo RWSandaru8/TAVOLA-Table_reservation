@@ -10,4 +10,4 @@ Tavola v1.1, your simple table reservation solution. No matter whether this is a
   <img src="https://github.com/RWSandaru8/webapp1/blob/main/assets/Images/logo1.jpg" alt="TAVOLA" width="250">
 </div>
 
----
+
